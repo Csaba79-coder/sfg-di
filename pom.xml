@@ -8,6 +8,9 @@
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
+	<!-- right click add as maven project then go to maven right hand side! Lifecycle and verify!-->
+
 	<groupId>guru.springframework</groupId>
 	<artifactId>sfg-di</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
