@@ -1,0 +1,9 @@
+= Important regarding creating a test ...
+
+Make a right click and choose what you need, see bellow:
+
+image::image-2021-10-06-00-33-30-239.png[]
+
+the result is as follows:
+
+image::image-2021-10-06-00-34-16-789.png[]
