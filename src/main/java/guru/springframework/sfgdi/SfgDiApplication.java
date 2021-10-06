@@ -74,8 +74,15 @@ public class SfgDiApplication {
 		System.out.println(primaryGreeting);
 
 		System.out.println("\n------ByProfiles");
+
 		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
 		String greetingDiffLanguage = i18nController.sayHello();
 		System.out.println(greetingDiffLanguage);
+
+		System.out.println("\n-----DogOrCatPet");
+		PetController petController = ctx.getBean("petController", PetController.class);
+		String bestPet = petController.whichPetIsTheBest();
+		System.out.println("--- The Best Pet is ---");
+		System.out.println(bestPet);
  	}
 }
