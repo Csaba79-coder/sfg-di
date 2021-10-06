@@ -68,8 +68,14 @@ public class SfgDiApplication {
 		System.out.println(constructorInjectedController.getGreeting());
 
 		System.out.println("\n----Primary Bean");
+
 		MyPrimaryController myPrimaryController = (MyPrimaryController) ctx.getBean("myPrimaryController");
 		String primaryGreeting = myPrimaryController.sayHello();
 		System.out.println(primaryGreeting);
+
+		System.out.println("\n------ByProfiles");
+		I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+		String greetingDiffLanguage = i18nController.sayHello();
+		System.out.println(greetingDiffLanguage);
  	}
 }
