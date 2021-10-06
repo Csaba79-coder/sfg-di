@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+// if we run the program it writes as follows after double hashtag exactly what had happened, so we can now exactly what is going on!
+// this one works together with CustomBeanPostProcessor!
 @Component
 public class LifeCycleDemoBean implements InitializingBean, DisposableBean, BeanNameAware,
         BeanFactoryAware, ApplicationContextAware {
@@ -20,7 +22,6 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
     @Override
     public void destroy() throws Exception {
         System.out.println("## The Lifecycle bean has been terminated");
-
     }
 
     @Override
@@ -37,7 +38,6 @@ public class LifeCycleDemoBean implements InitializingBean, DisposableBean, Bean
     @Override
     public void setBeanName(String name) {
         System.out.println("## My Bean Name is: " + name);
-
     }
 
     @Override
