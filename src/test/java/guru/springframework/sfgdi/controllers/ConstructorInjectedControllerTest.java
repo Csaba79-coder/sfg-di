@@ -10,7 +10,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new ConstructorGreetingService());
+        controller = new ConstructorInjectedController (new ConstructorGreetingService());
     }
 
     @Test

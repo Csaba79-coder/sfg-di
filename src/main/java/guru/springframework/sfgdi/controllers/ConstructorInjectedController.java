@@ -19,6 +19,12 @@ public class ConstructorInjectedController {
     public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
+
+
+//    public ConstructorInjectedController(GreetingService greetingService) {
+//        this.greetingService = greetingService;
+//    }
+
     public String getGreeting() {
         return greetingService.sayGreeting();
     }
