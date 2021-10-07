@@ -5,6 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
+		<!-- If I use java version 16 this one needs to be 2.5.5 else will not run! -->
 		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
@@ -18,7 +19,7 @@
 	<description>Dependency Injection examples</description>
 
 	<properties>
-		<java.version>16</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
