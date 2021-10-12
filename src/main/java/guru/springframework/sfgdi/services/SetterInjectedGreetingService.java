@@ -1,9 +1,8 @@
 package guru.springframework.sfgdi.services;
 
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
 
-@Service
+// @Service
 public class SetterInjectedGreetingService implements GreetingService {
 
     @Override

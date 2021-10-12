@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 // previous name before refactor was GreetingServiceImp
 
-// @Service
+@Service
 // @Component
 // @Controller
 public class ConstructorGreetingService implements GreetingService {
