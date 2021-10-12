@@ -1,5 +1,6 @@
 package guru.springframework.sfgdi.services;
 
+import guru.springframework.sfgdi.controllers.repositories.ItalianGreetingRepository;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
@@ -7,9 +8,15 @@ import org.springframework.stereotype.Service;
 // if you comment out with # the profile (EN) in application.properties look what's going on?! --> there comes the italian greeting :)
 // conclusion if you do not set default value in @Profile you need to set something in application.properties!!!
 
-@Profile({"IT", "default"})
-@Service("i18nService")
+// @Profile({"IT", "default"}) // after creating config!
+// @Service("i18nService") // after creating config!
 public class I18nItalianGreetingService implements GreetingService {
+
+    private final ItalianGreetingRepository italianGreetingRepository;
+
+    public I18nItalianGreetingService(ItalianGreetingRepository italianGreetingRepository) {
+        this.italianGreetingRepository = italianGreetingRepository;
+    }
 
     @Override
     public String sayGreeting() {
