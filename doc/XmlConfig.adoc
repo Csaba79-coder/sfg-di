@@ -1,0 +1,17 @@
+= How to create xml config file in IntelliJ
+
+image::image-2021-10-12-21-53-23-843.png[]
+
+'''
+
+Call the file as follows:
+
+'''
+
+sfgdi-config
+
+image::image-2021-10-12-21-55-42-045.png[]
+
+@ImportResource annotation with the config.xml in the main class, or in the config class itself! ... solved also configure application context message in config.xml file!
+
+image::image-2021-10-12-22-05-55-768.png[]

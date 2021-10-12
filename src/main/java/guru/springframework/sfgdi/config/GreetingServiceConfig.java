@@ -8,11 +8,9 @@ import guru.springframework.sfgdi.repositories.EnglishGreetingRepositoryImpl;
 import guru.springframework.sfgdi.repositories.ItalianGreetingRepository;
 import guru.springframework.sfgdi.repositories.ItalianGreetingRepositoryImpl;
 import guru.springframework.sfgdi.services.*;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
+import org.springframework.context.annotation.*;
 
+@ImportResource("classpath:sfgdi-config.xml")
 @Configuration
 public class GreetingServiceConfig {
 
@@ -70,10 +68,11 @@ public class GreetingServiceConfig {
         return new PrimaryGreetingService();
     }
 
-    @Bean
-    ConstructorGreetingService constructorGreetingService() {
-        return new ConstructorGreetingService();
-    }
+    // @Bean // --> as it is defined in the config.xml!!!
+    // but also in this case you dont need the method itself as well!!!
+//    ConstructorGreetingService constructorGreetingService() {
+//        return new ConstructorGreetingService();
+//    }
 
     // I can make @Qualifier to name my @Bean
     // by default, the name of the Bean is the name of the method, as follows: propertyInjectedGreetingService()
