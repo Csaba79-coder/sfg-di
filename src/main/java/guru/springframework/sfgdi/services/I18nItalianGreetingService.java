@@ -1,8 +1,6 @@
 package guru.springframework.sfgdi.services;
 
-import guru.springframework.sfgdi.controllers.repositories.ItalianGreetingRepository;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
+import guru.springframework.sfgdi.repositories.ItalianGreetingRepository;
 
 // if there is no active profile set, we want default the italian one!
 // if you comment out with # the profile (EN) in application.properties look what's going on?! --> there comes the italian greeting :)

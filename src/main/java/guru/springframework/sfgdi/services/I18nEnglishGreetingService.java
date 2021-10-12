@@ -1,8 +1,6 @@
 package guru.springframework.sfgdi.services;
 
-import guru.springframework.sfgdi.controllers.repositories.EnglishGreetingRepository;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
+import guru.springframework.sfgdi.repositories.EnglishGreetingRepository;
 
 // do not forget to add active profile in resources folder to application.properties
 // @Profile("EN") // remove after config!

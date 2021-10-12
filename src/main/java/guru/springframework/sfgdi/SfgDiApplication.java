@@ -7,7 +7,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 // @ComponentScan is overwriting the default package and also looking around here!
-@ComponentScan(basePackages = {"guru.springframework", "guru.springframework.pets"})
+// @ComponentScan(basePackages = {"guru.springframework", "guru.springframework.pets"})
+// because I made as it comes from a third party - with config I could remove @ComponentScan
 @SpringBootApplication
 public class SfgDiApplication {
 
