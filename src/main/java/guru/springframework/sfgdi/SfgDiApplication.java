@@ -4,7 +4,10 @@ import guru.springframework.sfgdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+// @ComponentScan is overwriting the default package and also looking around here!
+@ComponentScan(basePackages = {"guru.springframework", "guru.springframework.pets"})
 @SpringBootApplication
 public class SfgDiApplication {
 
