@@ -1,0 +1,17 @@
+Correct code:
+
+image::image-2021-10-26-15-52-27-289.png[]
+
+By mistake (general mistake):
+
+image::image-2021-10-26-15-51-10-204.png[]
+
+WATCH out the curly braces, and where to put them!
+
+AND if you set username in environment as env var see result:
+
+image::image-2021-10-26-16-23-15-042.png[]
+
+image::image-2021-10-26-16-25-36-281.png[]
+
+image::image-2021-10-26-21-01-54-888.png[]

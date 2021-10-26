@@ -1,9 +1,0 @@
-Correct code:
-
-image::image-2021-10-26-15-52-27-289.png[]
-
-By mistake (general mistake):
-
-image::image-2021-10-26-15-51-10-204.png[]
-
-WATCH out the curly braces, and where to put them!
